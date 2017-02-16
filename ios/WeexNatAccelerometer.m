@@ -1,14 +1,14 @@
 //
-//  NatWeexAccelerometer.m
+//  WeexNatAccelerometer.m
 //
 //  Created by huangyake on 17/1/7.
 //  Copyright © 2017 Nat. All rights reserved.
 //
 
-#import "NatWeexAccelerometer.h"
+#import "WeexNatAccelerometer.h"
 #import "NatAccelerometer.h"
 
-@implementation NatWeexAccelerometer
+@implementation WeexNatAccelerometer
 WX_EXPORT_METHOD(@selector(get:))
 WX_EXPORT_METHOD(@selector(watch::))
 WX_EXPORT_METHOD(@selector(clearWatch:))

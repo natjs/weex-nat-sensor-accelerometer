@@ -1,5 +1,5 @@
 //
-//  NatWeexAccelerometer.h
+//  WeexNatAccelerometer.h
 //
 //  Created by huangyake on 17/1/7.
 //  Copyright © 2017 Nat. All rights reserved.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <WeexSDK/WeexSDK.h>
 
-@protocol NatWeexAccelerometerPro <WXModuleProtocol>
+@protocol WeexNatAccelerometerPro <WXModuleProtocol>
 
 - (void)get:(WXModuleCallback)callback;
 
@@ -19,6 +19,6 @@
 @end
 
 
-@interface NatWeexAccelerometer : NSObject<NatWeexAccelerometerPro>
+@interface WeexNatAccelerometer : NSObject<WeexNatAccelerometerPro>
 
 @end
