@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>headers
+<?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://www.w3.org/ns/widgets"
     id="nat-sensor-accelerometer"
@@ -26,6 +26,19 @@
 
      <!-- android -->
      <platform name="android">
+        <config-file target="config.xml" parent="/*">
+             <feature name="SensorAccelerometer">
+                 <param name="category" value="module" />
+                 <param name="android-package" value="com.nat.weex.SensorAccelerometer" />
+                 <param name="api" value="nat/sensor/accelerometer" />
+             </feature>
+        </config-file>
+
+        <source-file
+             src="android/SensorAccelerometer.java"
+            target-dir="src/com/alibaba/weex/nat/SensorAccelerometer.java" />
+
+        <framework src="com.nat:sensor-accelerometer:1.0.2" />
      </platform>
 
 </plugin>
