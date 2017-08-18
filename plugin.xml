@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://www.w3.org/ns/widgets"
     id="nat-sensor-accelerometer"
-    version="0.1.2">
+    version="0.1.5">
     <name>nat-sensor-accelerometer</name>
     <description>Nat.js module: Accelerometer</description>
     <license>MIT</license>
@@ -12,33 +12,33 @@
     
      <!-- ios -->
      <platform name="ios">
-         <framework src="NatAccelerometer" type="podspec" spec="" />
          <config-file target="WeexpluginConfig.xml" parent="/*">
-             <feature name="WXTestModule">
+             <feature name="WeexNatAccelerometer">
                  <param name="category" value="module" />
                  <param name="ios-package" value="WeexNatAccelerometer" />
                  <param name="api" value="nat/sensor/accelerometer" />
              </feature>
          </config-file>
+         
          <header-file src="ios/WeexNatAccelerometer.h"/>
          <source-file src="ios/WeexNatAccelerometer.m"/>
+         
+         <framework src="NatAccelerometer" type="podspec" spec="0.0.2" />
      </platform>
 
      <!-- android -->
      <platform name="android">
         <config-file target="config.xml" parent="/*">
-             <feature name="SensorAccelerometer">
+             <feature name="Accelerometer">
                  <param name="category" value="module" />
-                 <param name="android-package" value="com.nat.weex.SensorAccelerometer" />
+                 <param name="android-package" value="com.nat.weex.Accelerometer" />
                  <param name="api" value="nat/sensor/accelerometer" />
              </feature>
         </config-file>
 
-        <source-file
-             src="android/SensorAccelerometer.java"
-            target-dir="src/com/alibaba/weex/nat/SensorAccelerometer.java" />
+        <source-file src="android/Accelerometer.java" target-dir="src/com/instapp/nat/sensor/accelerometer" />
 
-        <framework src="com.nat:sensor-accelerometer:1.0.2" />
+        <framework src="com.nat:sensor-accelerometer:1.0.5" />
      </platform>
 
 </plugin>

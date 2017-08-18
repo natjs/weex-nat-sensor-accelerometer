@@ -1,19 +1,18 @@
 {
-  "name": "nat-sensor-accelerometer",
-  "version": "0.1.2",
-  "description": "Nat.js module: Accelerometer",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "Nat",
-    "sensor",
-    "accelerometer",
-    "Weex",
-    "Plugin",
-    "module",
-    "handle"
-  ],
-  "author": "Acathur",
-  "license": "MIT"
+    "version": "0.1.5",
+    "platform": [
+        "ios",
+        "android"
+    ],
+    "description": "Nat.js module: Accelerometer",
+    "keywords": [
+        "weex",
+        "plugin",
+        "nat",
+        "natjs",
+        "sensor",
+        "accelerometer"
+    ],
+    "license": "MIT",
+    "name": "nat-sensor-accelerometer"
 }

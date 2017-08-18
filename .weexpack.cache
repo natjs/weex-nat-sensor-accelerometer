@@ -1,6 +1,6 @@
 {
     "namespace": "",
-    "latestVersion": "0.1.2",
+    "latestVersion": "0.1.5",
     "nameInfo": {
         "fullname": "nat-sensor-accelerometer",
         "name": "nat-sensor-accelerometer",
