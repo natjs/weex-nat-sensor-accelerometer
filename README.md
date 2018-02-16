@@ -1,6 +1,6 @@
 # nat-sensor-accelerometer
 
-- [Documentation](http://natjs.com/#/#accelerometer)
+- [Documentation](http://natjs.com/#/reference/sensor/accelerometer)
 - [Github](https://github.com/natjs/weex-nat-sensor-accelerometer)
 
 ## Installation
@@ -14,11 +14,11 @@ npm install natjs --save
 
 ## Usage
 
-Use in weex file (.we)
+Use in weex project (`.vue`/`.we`)
 
 ```html
 <script>
-import 'Nat' from 'natjs'
+import Nat from 'natjs'
 
 // get
 Nat.accelerometer.get((err, ret) => {
